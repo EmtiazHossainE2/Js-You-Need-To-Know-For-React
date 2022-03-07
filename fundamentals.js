@@ -74,6 +74,65 @@ function herMark(mark) {
 const result = 78
 herMark(result)
 
+//৩. array কিভাবে ডিক্লেয়ার করে array এর মধ্যে length, index, push, pop, indexOf, includes এইগুলা কিভাবে কাজ করে। কোনটা দিয়ে কি করে? সেগুলা কি তুমি জানো? 
+
+const myArray = ['Emtiaz', 'Hossain ', 'Emon', 'DoraEmon', 'Nobita']
+console.log(myArray);
+console.log(myArray.length);
+console.log(myArray[3]); // index 0 theke suru hoy .
+console.log(myArray.push('Shizuka')); //append new element to the end .
+console.log(myArray);
+console.log(myArray.pop('Shizuka')); //remove last element .
+console.log(myArray);
+console.log(myArray.indexOf('Emon'));
+console.log(myArray.indexOf('2')); // array er moddhe element jodi na thake tahole -1 return kore . 
+console.log(myArray.includes('DoraEmon')); //return boolean (true)
+console.log(myArray.includes('Dorami')); //return boolean (false)
+/* for of 
+for (const element of myArray) {
+    console.log(element);
+} */
+//for each
+myArray.forEach(element => {
+    console.log(element);
+})
+
+//৪. দুইটা বেসিক লুপ ,এর মধ্যে for loop তোমাকে জানতেই হবে। while লুপটাও দেখে রাখতে পারো। যদিও আমরা এই দুইটা লুপই কম ইউজ করবো। তাও কখনো লাগলে যেন তুমি বুঝে ফেলতে পারো। 
+
+/* for (let i = 1; i <= 10; i++) {
+    console.log(i);
+} */
+let i = 1
+while (i <= 5) {
+    console.log(i);
+    i++
+}
+
+//৫. function একটা অবশ্য জিনিস। বিশেষ করে সিম্পল একটা ফাংশন কখন ডিক্লেয়ার করতে হয়। কখন ফাংশন থেকে return করে। আর কিভাবে ফাংশন এর মধ্যে parameter নিতে হয়। 
+
+function multyply(num1, num2) {
+    const result = num1 * num2
+    return result
+}
+const value = multyply(10, 15)
+console.log(value);
+
+//৬. আখেরি রত্ন হচ্ছে Object তাই কোন একটা অবজেক্ট কিভাবে ডিক্লেয়ার করে। সেখান property কিভাবে কিভাবে একসেস করা যায়। এছাড়াও অবজেক্ট এর প্রপার্টি এর ভ্যালু হিসেবে কিভাবে array, object ইউজ করা যায়।  
+
+const mySelf = {
+    name: 'Emtiaz Hossain Emon',
+    age: 22,
+    dream: 'React Native Developer',
+    bestFriends: ['Rion', 'Ashraful', 'Hazim', 'Sifat', 'Sufian'],
+    rionDetails: {
+        home: 'Pirgonj',
+        age: 23,
+        phone: '01712345678'
+    }
+}
+console.log(mySelf);
+console.log(mySelf.bestFriends[2]);
+
 
 
 
