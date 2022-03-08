@@ -92,6 +92,7 @@ console.log(myArray.includes('Dorami')); //return boolean (false)
 for (const element of myArray) {
     console.log(element);
 } */
+
 //for each
 myArray.forEach(element => {
     console.log(element);
