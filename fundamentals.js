@@ -135,5 +135,3 @@ console.log(mySelf);
 console.log(mySelf.bestFriends[2]);
 
 
-
-

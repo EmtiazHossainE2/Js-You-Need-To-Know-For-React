@@ -91,16 +91,20 @@ console.log(dream, home);
 // var obj = {
 //     [key]: value
 // };
+const x = 10;
+const y = 20;
+// const ob = {
+//     x: x,
+//     y: y
+// }
+const ob = { x, y }
+console.log(ob);
 
 let cat = 'Miaow';
 let dog = 'Woof';
 let bird = 'Peet peet';
 
-let someObject = {
-    cat,
-    dog,
-    bird
-}
+let someObject = { cat, dog, bird }
 console.log(someObject);
 
 //৬. ফাংশন এর মধ্যে ডিফল্ট প্যারামিটার কিভাবে ডিক্লেয়ার করে
