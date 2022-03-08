@@ -28,10 +28,12 @@ console.log(bestFriend);
 //2. স্প্রেড অপারেটর (...) কিভাবে কাজ করে। বিশেষ করে একটা array কে কপি করে নতুন করে array বানাবে এবং সেখানে একটা উপাদান যোগ করবে। আবার একটা উপাদান কে বাদ দিয়ে বাকি সব উপাদানকে কিভাবে যোগ করবে (filter ইউজ করে)
 
 const bestFriends = ['Rion', 'Ashraful', 'Hazim', 'Sifat', 'Sufian'];
-
 console.log(...bestFriends);
-const friend = ['My Friends ', ...bestFriends.filter(name => name != 'Rion'), 'lives in Rangpur'] // shift,unshift,pop,push er kaj spread operator diye kora jay . 
-console.log(...friend);
+const addFrnd = ['Dipta', ...bestFriends]
+console.log('addfrnd : ', addFrnd);
+const friend = ['Remove frnd name: ', 'My Friends ', ...bestFriends.filter(name => name != 'Sufian'), 'lives in Rangpur'] // shift,unshift,pop,push er kaj spread operator diye kora jay . 
+console.log(friend);  //array return kore
+console.log(...friend); // ... dile string return kore . 
 console.log(bestFriends.filter(frnd => frnd.length > 6));
 
 let arrOne = [0, 1, 2, 3, 4];
@@ -43,4 +45,8 @@ function calculate(a, b, c, d) {
     console.log('Sum is : ' + (a + b + c + d));
 }
 (calculate(...arrOne));
+
+//3. 1. শূন্য প্যারামিটারওয়ালা একটা অ্যারো ফাংশন লিখবে যেটা ৯ রিটার্ন করবে।  
+const zeroPera = () => 9
+console.log(zeroPera(9));
 
