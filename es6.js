@@ -25,12 +25,12 @@ console.log(rionDetail);
 const bestFriend = `My friend is ${mySelf.bestFriends[3]}`
 console.log(bestFriend);
 
-//2. স্প্রেড অপারেটর (...) কিভাবে কাজ করে। বিশেষ করে একটা array কে কপি করে নতুন করে array বানাবে এবং সেখানে একটা উপাদান যোগ করবে। আবার একটা উপাদান কে বাদ দিয়ে বাকি সব উপাদানকে কিভাবে যোগ করবে (filter ইউজ করে) 
+//2. স্প্রেড অপারেটর (...) কিভাবে কাজ করে। বিশেষ করে একটা array কে কপি করে নতুন করে array বানাবে এবং সেখানে একটা উপাদান যোগ করবে। আবার একটা উপাদান কে বাদ দিয়ে বাকি সব উপাদানকে কিভাবে যোগ করবে (filter ইউজ করে)
 
 const bestFriends = ['Rion', 'Ashraful', 'Hazim', 'Sifat', 'Sufian'];
 
 console.log(...bestFriends);
-const friend = ['My Friends ', ...bestFriends, 'lives in Rangpur'] // shift,unshift,pop,push er kaj spread operator diye kora jay . 
+const friend = ['My Friends ', ...bestFriends.filter(name => name != 'Rion'), 'lives in Rangpur'] // shift,unshift,pop,push er kaj spread operator diye kora jay . 
 console.log(...friend);
 console.log(bestFriends.filter(frnd => frnd.length > 6));
 
@@ -44,23 +44,3 @@ function calculate(a, b, c, d) {
 }
 (calculate(...arrOne));
 
-//Find all prime numbers in an array 
-const array = [-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
-function isPrime(num) {
-    for (let i = 2; i < num; i++) {
-        if (num % i === 0) {
-            return false
-        }
-    }
-    return num > 1
-}
-console.log(array.filter(isPrime));
-
-////Find all prime numbers
-let primes = [];
-for (let n = 2; n <= 100; n++) {
-    if (primes.every(prime => { return n % prime != 0 })) {
-        primes.push(n);
-    }
-}
-console.log(primes);
