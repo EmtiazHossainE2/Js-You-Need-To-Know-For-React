@@ -29,8 +29,10 @@ console.log(bestFriend);
 
 const bestFriends = ['Rion', 'Ashraful', 'Hazim', 'Sifat', 'Sufian'];
 console.log(...bestFriends);
-const addFrnd = ['Dipta', ...bestFriends]
+const spreadFrnd = [...bestFriends]
+const addFrnd = ['Dipta', ...spreadFrnd]
 console.log('addfrnd : ', addFrnd);
+console.log(bestFriends);
 const friend = ['Remove frnd name: ', 'My Friends ', ...bestFriends.filter(name => name != 'Sufian'), 'lives in Rangpur'] // shift,unshift,pop,push er kaj spread operator diye kora jay . 
 console.log(friend);  //array return kore
 console.log(...friend); // ... dile string return kore . 

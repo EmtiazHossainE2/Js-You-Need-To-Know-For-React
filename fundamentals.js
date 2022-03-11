@@ -113,6 +113,14 @@ while (i <= 5) {
 //     sum += i
 // }
 // console.log(sum);
+for (let i = 1; i <= 100; i++) {
+    if (i % 2 === 0) {
+        // console.log(i); even
+    }
+    else if (i % 2 === 1) {
+        // console.log(i); //odd
+    }
+}
 
 
 //৫. function একটা অবশ্য জিনিস। বিশেষ করে সিম্পল একটা ফাংশন কখন ডিক্লেয়ার করতে হয়। কখন ফাংশন থেকে return করে। আর কিভাবে ফাংশন এর মধ্যে parameter নিতে হয়। 
