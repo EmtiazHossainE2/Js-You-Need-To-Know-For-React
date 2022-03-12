@@ -9,14 +9,36 @@ console.log(arrayMap);
 /*
     callbackfn — A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array.
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
-    map ==> The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
 
-    You shouldn't be using map if:
+        map ==> The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
 
-    you're not using the array it returns; and/or (use forEach or for ..of )
-    you're not returning a value from the callback.
+        You shouldn't be using map if:
+
+        you're not using the array it returns; and/or (use forEach or for ..of )
+        you're not returning a value from the callback.
+
+        forEach ==> the forEach() method executes a provided function once for each array element. Return value undefined. 
+
+
 
 */
+const array1 = ['a', 'b', 'c'];
+
+array1.forEach(element => console.log(element));
+
+const items = ['item1', 'item2', 'item3'];
+const copyItems = [];
+
+// before
+for (let i = 0; i < items.length; i++) {
+    copyItems.push(items[i]);
+}
+
+// after
+items.forEach((item) => {
+    copyItems.push(item);
+});
+
 
 //২. ternary অপারেটর কি ? এইটা দিয়ে শর্টকার্টে কিভাবে if-else লিখে
 
