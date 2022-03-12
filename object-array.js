@@ -55,7 +55,7 @@ console.log(getFee(false));
 // expected output: "$10.00"
 
 console.log(getFee(null));
-  // expected output: "$10.00"
+// expected output: "$10.00"
 
 //৩. লজিক্যাল এন্ড(&&) আর লজিক্যাল or(।।) এই দুইটা সম্পর্কে হালকা ধারণা
 /*  && check korbe sob gulai true kina .jodi sob true hoy tahole  return kore . || jekono ekta true holei return kore .
@@ -66,7 +66,65 @@ More generally, the operator returns the value of the first falsy operand encoun
 The logical OR (||) operator  for a set of operands is true if and only if one or more of its operands is true. It is typically used with boolean (logical) values. When it is, it returns a Boolean value. However, the || operator actually returns the value of one of the specified operands, so if this operator is used with non-Boolean values, it will return a non-Boolean value. */
 
 //৪. JSON এর stringify এবং parse কখন কোনটা ইউজ করে
+/* localStorage & sessionStorage  er obj niye kaj korte hole setake first e JSON.parse() korte hoy & kono obj set korar age  JSON.stringify() korte hoy .
+JSON.parse() is used to convert String to Object. JSON.stringify() is used to convert Object to String. */
+let my_object = { key_1: "some text", key_2: true, key_3: 5 };
+let object_as_string = JSON.stringify(my_object);
+// "{"key_1":"some text","key_2":true,"key_3":5}"  
+typeof (object_as_string);
+// "string" 
+
+let object_as_string_as_object = JSON.parse(object_as_string);
+// {key_1: "some text", key_2: true, key_3: 5} 
+typeof (object_as_string_as_object);
+// "object" 
+
 
 //৫.++, --, +, +'', +=, -= এইগুলা কি জিনিস। কোনটা দিয়া কি করে সেটা বুঝলেই হবে। তাছাড়া active = !active এইটা এর মানে কি।
+/*  
+    ++   =  increment operator
+    --   =   decrement operator 
+    +    =   addition
+    +''  =   
+    +=   =   addition assignment operator  
+    -=   =  subtraction assignment operator 
+    active != active  =   strict inequality operator (!==) 
 
-//৬.Object.keys, Object.values জিনিসগুলা জানা থাকলেও ভালো। 
+/* let x = 3;
+const y = x++; // x+ 1 
+console.log(`x:${x}, y:${y}`);
+
+let a = 3;
+const b = ++a; // 1 + x 
+console.log(`a:${a}, b:${b}`); */
+
+let x = 3;
+const y = x--;
+console.log(`x:${x}, y:${y}`);
+
+let a = 3;
+const b = --a;
+console.log(`a:${a}, b:${b}`);
+
+//৬.Object.keys, Object.values জিনিসগুলা জানা থাকলেও ভালো।
+
+//Object.keys == > Object.keys() method returns an array of a given object's own enumerable property names, iterated in the same order that a normal loop would. 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys 
+
+const object1 = {
+    a: 'somestring',
+    b: 42,
+    c: false
+};
+console.log(Object.keys(object1));  //  output: Array ["a", "b", "c"]
+
+// Object.values ==>  The Object.values() method returns an array of a given object's own enumerable property values, in the same order as that provided by a for...in loop. (The only difference is that a for...in loop enumerates properties in the prototype chain as well.) 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values  
+
+const object2 = {
+    a: 'somestring',
+    b: 42,
+    c: false
+};
+
+console.log(Object.values(object2)); //  output: Array ["somestring", 42, false]
