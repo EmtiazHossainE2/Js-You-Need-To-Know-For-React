@@ -44,8 +44,26 @@ items.forEach((item) => {
 
 
 //২. ternary অপারেটর কি ? এইটা দিয়ে শর্টকার্টে কিভাবে if-else লিখে
+/* The conditional (ternary) operator is the only JavaScript operator that takes three operands: a condition followed by a question mark (?), then an expression to execute if the condition is truthy followed by a colon (:), and finally the expression to execute if the condition is falsy. This operator is frequently used as an alternative to an if...else statement.  */
+function getFee(isMember) {
+    return (isMember ? '$2.00' : '$10.00');
+}
+console.log(getFee(true));
+// expected output: "$2.00"
+
+console.log(getFee(false));
+// expected output: "$10.00"
+
+console.log(getFee(null));
+  // expected output: "$10.00"
 
 //৩. লজিক্যাল এন্ড(&&) আর লজিক্যাল or(।।) এই দুইটা সম্পর্কে হালকা ধারণা
+/*  && check korbe sob gulai true kina .jodi sob true hoy tahole  return kore . || jekono ekta true holei return kore .
+
+The logical AND (&&) operator  for a set of boolean operands will be true if and only if all the operands are true. Otherwise it will be false.
+
+More generally, the operator returns the value of the first falsy operand encountered when evaluating from left to right, or the value of the last operand if they are all truthy.
+The logical OR (||) operator  for a set of operands is true if and only if one or more of its operands is true. It is typically used with boolean (logical) values. When it is, it returns a Boolean value. However, the || operator actually returns the value of one of the specified operands, so if this operator is used with non-Boolean values, it will return a non-Boolean value. */
 
 //৪. JSON এর stringify এবং parse কখন কোনটা ইউজ করে
 
