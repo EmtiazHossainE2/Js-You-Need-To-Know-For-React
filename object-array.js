@@ -19,7 +19,10 @@ console.log(arrayMap);
 
         forEach ==> the forEach() method executes a provided function once for each array element. Return value undefined. 
 
+        Find ==> The find() method returns the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned. 
 
+        Filter ==> condition check kore return kore ekta array . The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+        
 
 */
 const array1 = ['a', 'b', 'c'];
