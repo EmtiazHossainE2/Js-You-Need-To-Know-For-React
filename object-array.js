@@ -89,26 +89,28 @@ typeof (object_as_string_as_object);
     +=   =   addition assignment operator  
     -=   =  subtraction assignment operator 
     active != active  =   strict inequality operator (!==) 
-
-/* let x = 3;
-const y = x++; // x+ 1 
+*/
+let x = 3;
+const y = x++; // x+ 1 3+1 return present value 
 console.log(`x:${x}, y:${y}`);
 
-let a = 3;
-const b = ++a; // 1 + x 
-console.log(`a:${a}, b:${b}`); */
 
-let x = 3;
+
+// let a = 3;
+// const b = ++a; // 1 + x
+// console.log(`a:${a}, b:${b}`);
+
+/* let x = 3;
 const y = x--;
 console.log(`x:${x}, y:${y}`);
 
 let a = 3;
 const b = --a;
-console.log(`a:${a}, b:${b}`);
+console.log(`a:${a}, b:${b}`); */
 
 //৬.Object.keys, Object.values জিনিসগুলা জানা থাকলেও ভালো।
 
-//Object.keys == > Object.keys() method returns an array of a given object's own enumerable property names, iterated in the same order that a normal loop would. 
+/* Object.keys == > Object.keys() method returns an array of a given object's own enumerable property names, iterated in the same order that a normal loop would. 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys 
 
 const object1 = {
@@ -116,9 +118,9 @@ const object1 = {
     b: 42,
     c: false
 };
-console.log(Object.keys(object1));  //  output: Array ["a", "b", "c"]
+console.log(Object.keys(object1));    output: Array ["a", "b", "c"]
 
-// Object.values ==>  The Object.values() method returns an array of a given object's own enumerable property values, in the same order as that provided by a for...in loop. (The only difference is that a for...in loop enumerates properties in the prototype chain as well.) 
+ Object.values ==>  The Object.values() method returns an array of a given object's own enumerable property values, in the same order as that provided by a for...in loop. (The only difference is that a for...in loop enumerates properties in the prototype chain as well.) 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values  
 
 const object2 = {
@@ -127,4 +129,4 @@ const object2 = {
     c: false
 };
 
-console.log(Object.values(object2)); //  output: Array ["somestring", 42, false]
+console.log(Object.values(object2));  output: Array ["somestring", 42, false] */

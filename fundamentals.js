@@ -88,6 +88,7 @@ console.log(myArray.indexOf('Emon'));
 console.log(myArray.indexOf('2')); // array er moddhe element jodi na thake tahole -1 return kore . 
 console.log(myArray.includes('DoraEmon')); //return boolean (true)
 console.log(myArray.includes('Dorami')); //return boolean (false)
+
 /* for of 
 for (const element of myArray) {
     console.log(element);
