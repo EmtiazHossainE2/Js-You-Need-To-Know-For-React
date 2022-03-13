@@ -82,18 +82,18 @@ const dreamGirl = [
 
 console.log(dreamGirl[0].dream1);
 
-// loop for in loop
+// loop for in loop  (obj)
 
-const object = { a: 1, b: 2, c: 3 };
+const object = { a: 1, b: 2, c: 3 }; //obj property 1,2,3 / property a,b,c 
 console.log(object["a"]);
 
 for (const property in object) {
-  console.log(property);
-  console.log(object);
-  //   console.log(`${property}: ${object[property]}`);
+  // console.log(property);
+  // console.log(object);
+  console.log(`${property}: ${object[property]}`);
 }
 
-// for loop
+// for loop  (array)
 
 const friends = ["hero", "broo", "china", "angel"];
 for (let i = 0; i < friends.length; i++) {
@@ -173,8 +173,8 @@ console.log(result2);
 
 // ফিল্টার এর ছোট ভাই  ফাইন্ড find
 
-// find হচ্ছে  যে শর্ত দেওয়া হয় সে শর্ত  ফুল ফিল করলে পুরো এলিমেন্টকে দিবে,
-// শুধু মাত্র প্রথম এলিমেন্ট কে  দিবে। না পাইলে আন্ডিফাইন দিবে
+// filter হচ্ছে  যে শর্ত দেওয়া হয় সে শর্ত  ফুল ফিল করলে পুরো এলিমেন্টকে দিবে,
+// find শুধু মাত্র প্রথম এলিমেন্ট কে  দিবে। না পাইলে আন্ডিফাইন দিবে
 
 const output5 = products.find((pd) => pd.color == "black");
 console.log(output5);
