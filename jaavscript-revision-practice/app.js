@@ -55,7 +55,7 @@ const dreamGirl = [
       name: "bbu",
       height: "5.4",
       family: [{ father: "rock", mother: "shila", sister: "chinki" }],
-      age: undefined,
+      age: 32,
       contactInfo: [
         {
           facebook: {
