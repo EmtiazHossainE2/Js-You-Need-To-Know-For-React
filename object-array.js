@@ -95,8 +95,9 @@ const y = x++; // x+ 1 3+1 return present value
 console.log(`x:${x}, y:${y}`);
 
 let age = 21;
-age++
-console.log(age);
+// let myage = age++  
+let myage = ++age
+console.log(myage);
 
 // let a = 3;
 // const b = ++a; // 1 + x
