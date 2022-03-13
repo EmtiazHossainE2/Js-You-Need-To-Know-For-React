@@ -181,3 +181,23 @@ console.log(output5);
 
 //একটা মজার ব্যাপার হলো ভিতরে  ভিতরে সবাই লুপ ই  চালাচ্ছে
 
+// optional chaining
+
+const number = null;
+
+console.log(number?.age, number?.name);
+console.log(number);
+
+// indexof
+
+const friends2 = ["squash", "onions", "shallots"];
+
+console.log(friends2.indexOf("gias") == -1);
+
+// এইবার  একটু  API  নিয়ে  আলোচনা  করা  যাক
+
+// all api link: https://apipheny.io/free-api/
+
+// open libary api : https://openlibrary.org/works/OL45883W.json
+
+// university list : http://universities.hipolabs.com/search?country=United+States
